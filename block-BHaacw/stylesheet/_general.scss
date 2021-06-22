@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: $font;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: $primary;
+}
+.width-full{
+    width: 70%;
+    border-radius: 50%;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
