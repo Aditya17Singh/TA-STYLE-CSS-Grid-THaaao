@@ -1,0 +1,315 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Archivo", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 0rem;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-content {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.align-center {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.header li {
+  margin-left: 1rem;
+}
+
+.header a {
+  color: #A59D98;
+}
+
+.header .strong a {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.header .active a {
+  color: #F0C68C;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 90%;
+  right: 0;
+}
+
+.hero-section {
+  background-color: #F5E3D7;
+  padding: 12rem 1rem;
+  height: 100vh;
+}
+
+.hero-section h1 {
+  color: #A59D98;
+  font-size: 0.8rem;
+}
+
+.hero-section h2 {
+  font-size: 2.4rem;
+  color: #7c7575;
+  font-weight: 200;
+}
+
+.hero-section h2 .stimulus {
+  color: black;
+  font-weight: 300;
+}
+
+.hero-section p {
+  color: #A59D98;
+  font-size: 0.8rem;
+  margin: 1.4rem 0;
+  line-height: 1.7;
+}
+
+.hero-section button a {
+  color: black;
+}
+
+.hero-section button {
+  background: transparent;
+  border-radius: 25px;
+  padding: 0.7rem 2rem;
+  border: none;
+  border: 2px solid black;
+}
+
+.height {
+  font-size: 0;
+}
+
+.height img {
+  height: 100vh;
+}
+
+.item-1 {
+  padding: 1rem 1rem;
+}
+
+.item-1 p {
+  color: #A59D98;
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+.item-1 h3 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.item-1 h4 {
+  color: #F0C68C;
+  font-size: 0.8rem;
+}
+
+.width-full-main {
+  width: 60%;
+  height: 100%;
+  font-size: 0;
+}
+
+.skills {
+  background-color: #ECAF4E;
+  height: 100%;
+  color: white;
+}
+
+.card-section .interface {
+  background-color: #ECAF4E;
+  color: white;
+  text-align: center;
+  padding: 4.5rem 1rem;
+}
+
+.card-section .media {
+  background-color: #FC683E;
+  color: white;
+  text-align: center;
+  padding: 4.5rem 1rem;
+}
+
+.card-section .app {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 4.5rem 1rem;
+}
+
+.card-section .coding {
+  text-align: center;
+  padding: 4.5rem 1rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  margin: 1rem 0;
+  border-bottom: 1px solid #F0C68C;
+  outline: 0;
+  padding: 1.3rem 0;
+}
+
+.form {
+  background-color: #FC683E;
+  padding: 1.3rem 1rem;
+}
+
+.form h5 {
+  color: white;
+}
+
+.form p {
+  color: #d8d3d3;
+  font-size: 0.8rem;
+}
+
+.width {
+  width: 50%;
+  font-size: 0;
+  height: 513px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+input::-webkit-input-placeholder {
+  color: white;
+}
+
+input:-ms-input-placeholder {
+  color: white;
+}
+
+input::-ms-input-placeholder {
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+textarea::-webkit-input-placeholder {
+  color: whitesmoke;
+}
+
+textarea:-ms-input-placeholder {
+  color: whitesmoke;
+}
+
+textarea::-ms-input-placeholder {
+  color: whitesmoke;
+}
+
+textarea::placeholder {
+  color: whitesmoke;
+}
+
+.footer {
+  text-align: center;
+  margin: 6rem 0;
+}
+/*# sourceMappingURL=style.css.map */
